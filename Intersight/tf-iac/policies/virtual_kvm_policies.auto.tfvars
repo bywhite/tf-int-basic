@@ -1,0 +1,17 @@
+#______________________________________________
+#
+# Virtual KVM Policy Variables
+#______________________________________________
+
+virtual_kvm_policies = {
+  "tf-iac" = {
+    enable_virtual_kvm        = false
+    description               = "tf-iac Virtual KVM Policy"
+    enable_local_server_video = true
+    enable_video_encryption   = true
+    enable_virtual_kvm        = true
+    maximum_sessions          = 4
+    remote_port               = 2068
+    tags                      = []
+  }
+}
